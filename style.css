@@ -1,0 +1,321 @@
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+root {
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --danger: #ef4444;
+    --success: #16a34a;
+    --border: #e5e7eb;
+}
+
+root {
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --text: #1f2937;
+    --muted: #6b7280;
+    --primary: #2563eb;
+    --danger: #ef4444;
+    --success: #16a34a;
+    --border: #e5e7eb;
+}
+
+/* Page Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main Container */
+
+.todo-container {
+    width: 100%;
+    max-width: 700px;
+
+    background-color: white;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header p {
+    color: gray;
+    font-size: 14px;
+}
+
+/* Dark Mode Button */
+
+.theme-button {
+    border: none;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    font-size: 18px;
+}
+
+/* Form */
+
+.task-form {
+    display: flex;
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.task-form input {
+    flex: 1;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    outline: none;
+}
+
+.task-form button {
+    border: none;
+
+    padding: 12px 18px;
+
+    background-color: #007bff;
+
+    color: white;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
+
+/* Counters */
+
+.task-stats {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.pending-box,
+.completed-box {
+    padding: 10px 15px;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+}
+
+.pending-box {
+    background-color: #fff3cd;
+}
+
+.completed-box {
+    background-color: #d4edda;
+}
+
+/* Empty Message */
+
+.empty-text {
+    text-align: center;
+
+    color: gray;
+
+    margin-bottom: 15px;
+}
+
+/* Task List */
+
+.task-list {
+    list-style: none;
+}
+
+/* Single Task */
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+
+    margin-bottom: 10px;
+
+    background-color: #f8f9fa;
+
+    border-radius: 8px;
+}
+
+/* Completed Task */
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Buttons Area */
+
+.task-buttons {
+    display: flex;
+    gap: 8px;
+}
+
+.edit-btn,
+.delete-btn,
+.complete-btn {
+    border: none;
+
+    padding: 8px 12px;
+
+    color: white;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.complete-btn {
+    background-color: green;
+}
+
+.edit-btn {
+    background-color: orange;
+}
+
+.delete-btn {
+    background-color: crimson;
+}
+
+/* Popup */
+
+.popup {
+    display: none;
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup Box */
+
+.popup-content {
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    width: 350px;
+}
+
+.popup-content h2 {
+    margin-bottom: 15px;
+}
+
+.popup-content input {
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+}
+
+/* Popup Buttons */
+
+.popup-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cancel-button,
+.save-button {
+    border: none;
+
+    padding: 10px 15px;
+
+    color: white;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: gray;
+}
+
+.save-button {
+    background-color: green;
+}
+
+/* Dark Mode */
+
+.dark-mode {
+    background-color: #1e1e1e;
+}
+
+.dark-mode .todo-container {
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.dark-mode input {
+    background-color: #444;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .task-item {
+    background-color: #3a3a3a;
+}
