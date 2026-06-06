@@ -319,3 +319,17 @@ header p {
 .dark-mode .task-item {
     background-color: #3a3a3a;
 }
+
+.show {
+    display: flex;
+}
+
+.dark-mode .pending-box {
+    background-color: #4a3f12;
+    color: #ffd54f;
+}
+
+.dark-mode .completed-box {
+    background-color: #1f4d2e;
+    color: #7cff9d;
+}
